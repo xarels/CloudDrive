@@ -1,0 +1,312 @@
+* {
+  margin:0;
+  padding: 0;
+}
+
+html, body {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  /*background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+  url(Home.jpeg);*/
+  background-color: #3c657e;
+  background-size: cover;
+  height: 100%;
+  min-width: 1200px;
+  line-height: 1.8;
+  background-position: center;
+}
+
+.logo img {
+  margin-left: 100px;
+  width: 150px;
+  height: 150px;
+  background: none;
+}
+
+.page-wrap {
+  display: inline-block;
+  min-height: 80%;
+  width: 100%;
+}
+
+.site-footer {
+  height: 110px;
+  background: #3c3f42;
+  position: relative;
+  display: block;
+}
+
+.welcomeMsg {
+  width: 500px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 250px;
+
+}
+
+.welcomeMsg h1 {
+color: #FDFEFE;
+}
+
+/*---------End of Footer---------*/
+
+.navBar {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  top-margin: 30px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.main-nav a {
+  color: black;
+  text-decoration: :none;
+  padding:5px 20px;
+  font-size: 15px;
+}
+
+.main-nav li.active a {
+  border: 1px solid black;
+}
+
+.main-nav li a:hover {
+  border: 1px solid black;
+  background-color: #2e75b6;
+  transition: all 0.5s ease-in;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.logo img {
+  float: left;
+}
+
+.WebTitle {
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+  height: 50px;
+  top:  5%;
+  left: 15%;
+  transform: translate(-50%,-50%);
+}
+
+.WebTitle h1 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+}
+
+.copyright {
+  width: 230px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  border: 1px solid white;
+  margin-left: 500px;
+  border-radius: 4px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.copyright:hover {
+  background:#888e99;
+}
+
+.copyright p {
+  color: #fff;
+  line-height: 40px;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+/*------------------------------*/
+/* Social Icons CSS starts here */
+/*------------------------------*/
+.socialIcons {
+  float: right;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+.socialIcons:hover {
+  background: #888e99;
+  border-radius: 4px;
+  padding-bottom: 7px;
+}
+
+.socialIcons p {
+  text-align: center;
+  color: white;
+}
+
+.socialIcons ul {
+  list-style: none;
+}
+
+/*To spread icons wider, set their width and height*/
+.socialIcons ul li {
+  width: 30px; /*width of the circle around icons*/
+  height: 30px; /*height of the circle around icons*/
+  line-height: 1px; /*line height of the circle around icons*/
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%; /*To set radius around the icons, decreasing the value makes radius a square, increasing a circle*/
+  border: 2px solid #fff; /*To set border around icons and their color*/
+  float: left;
+}
+
+/*Style the icons and set their color to white, margin-top value to 20px to align them properly*/
+.socialIcons ul li .fa {
+  color: #fff;
+  margin-top: 7px; /*Align the icons properly inside the circle*/
+  transition: all 0.5s ease;
+}
+
+/*Style hover function using nth-child (1) - Facebook, (2) - twitter etc.*/
+/*box shadow effect is used to border and text-shadow effect to icons for glowing effect*/
+/*and use transition property for smooth transition effect*/
+/*Facebook*/
+.socialIcons ul li:hover:nth-child(1) {
+  border: 2px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.socialIcons ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*Twitter*/
+.socialIcons ul li:hover:nth-child(2) {
+  border: 2px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.socialIcons ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/*Instagram*/
+.socialIcons ul li:hover:nth-child(3) {
+  border: 2px solid #517fa4;
+  box-shadow: 0 0 15px #517fa4;
+  transition: all 0.5s ease;
+}
+
+.socialIcons ul li:hover .fa-instagram {
+  color: #517fa4;
+  text-shadow: 0 0 15px #517fa4;
+  transition: all 0.5s ease;
+}
+
+/*Google+*/
+.socialIcons ul li:hover:nth-child(4) {
+  border: 2px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.socialIcons ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+/*Whatsapp*/
+.socialIcons ul li:hover:nth-child(5) {
+  border: 2px solid #64D448;
+  box-shadow: 0 0 15px #64D448;
+  transition: all 0.5s ease;
+}
+
+.socialIcons ul li:hover .fa-whatsapp {
+  color: #64D448;
+  text-shadow: 0 0 15px #64D448;
+  transition: all 0.5s ease;
+}
+/*End of Social Media Icons CSS*/
+/*------------------------------*/
+/*Login/Register Dropdown Window*/
+
+
+/*Table Styling*/
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 400px;
+  margin: 10px;
+}
+table tr th,
+table tr td {
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  padding: 5px;
+}
+table tr th:first-child,
+table tr td:first-child {
+  border-left: 1px solid #bbb;
+}
+table tr th {
+  background: #eee;
+  border-top: 1px solid #bbb;
+  text-align: left;
+}
+
+table tr td {
+  background: white;
+  border-top: 1px solid #bbb;
+  text-align: left;
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+#houseMates th, #userDetails th {
+  text-align: center;
+}
+
+.tableWrap {
+  width: 425px;
+  margin: 30px auto;
+}
+
+.one {
+  text-align: center;
+}
